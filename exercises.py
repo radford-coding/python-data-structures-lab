@@ -74,12 +74,20 @@ print('Exercise 3:', slice_foods())
 # Create a dictionary named home_town containing the keys of city, state, and population.
 # Using the home_town dictionary, assign to a variable named home_town_message a string with this format: “I was born in <city>, <state> - population of <population>”
 
+home_town = {
+    'city': 'boston',
+    'state': 'massachusetts',
+    'pop': 'at least 12'
+}
+
 def hometown_info():
-    return 1
+    home_town_message = 'I was born in {city}, {state} - population of {pop}'.format(**home_town)
+    return home_town_message
 
 
 # Call the function and print the result
 print('Exercise 4:', hometown_info())
+# print(home_town.values())
 
 
 # Exercise 5: Iterating Over Dictionary Items
