@@ -9,9 +9,9 @@
 # - Use a loop to print each element.
 
 def example_list_function():
-  example_list = ['element1', 'element2', 'element3']
-  for element in example_list:
-      print(element)
+    example_list = ['element1', 'element2', 'element3']
+    for element in example_list:
+        print(element)
 
 # Call the function and print each element
 # example_list_function()
@@ -23,8 +23,14 @@ def example_list_function():
 # Assign the second student’s name to a variable named first_student.
 # Assign the last student’s name to a variable named last_student.
 
+students = ['ben', 'ashley', 'jim']
+
+
 def manage_students():
-    return 1
+    first_student = students[1]
+    last_student = students[-1]
+    return first_student, last_student
+
 
 # Call the function and print the result
 print('Exercise 1:', manage_students())
@@ -36,8 +42,15 @@ print('Exercise 1:', manage_students())
 # Create a variable named meal and assign an empty string to it.
 # Use a for loop to iterate over the strings in foods and append each string to meal.
 
+foods = ('potatoes', 'eggs', 'bacon')
+
+
 def combine_foods():
-    return 1
+    meal = ''
+    for food in foods:
+        meal += food + ' '
+    return meal
+
 
 # Call the function and print the result
 print('Exercise 2:', combine_foods())
@@ -48,7 +61,9 @@ print('Exercise 2:', combine_foods())
 # Using the slice operator, assign a new tuple containing only the last two food strings in the foods to a variable named last_two_foods.
 
 def slice_foods():
-    return 1
+    last_two_foods = foods[slice(1, 3)]
+    return last_two_foods
+
 
 # Call the function and print the result
 print('Exercise 3:', slice_foods())
@@ -62,6 +77,7 @@ print('Exercise 3:', slice_foods())
 def hometown_info():
     return 1
 
+
 # Call the function and print the result
 print('Exercise 4:', hometown_info())
 
@@ -73,6 +89,7 @@ print('Exercise 4:', hometown_info())
 
 def list_home_town_items():
     return 1
+
 
 # Call the function and print the result
 print('Exercise 5:', list_home_town_items())
@@ -86,6 +103,7 @@ print('Exercise 5:', list_home_town_items())
 def create_awesome_students():
     return 1
 
+
 # Call the function and print the result
 print('Exercise 6:', create_awesome_students())
 
@@ -98,7 +116,6 @@ print('Exercise 6:', create_awesome_students())
 def filter_foods_with_a():
     return 1
 
+
 # Call the function and print the result
 print('Exercise 7:', filter_foods_with_a())
-
-
