@@ -95,8 +95,12 @@ print('Exercise 4:', hometown_info())
 # Define an empty list named home_town_items.
 # Use a for loop to iterate over the key: value pairs in the home_town dictionary and append a string with the following format to home_town_items: "<key> = <value>"
 
+home_town_items = []
+
 def list_home_town_items():
-    return 1
+    for key, value in home_town.items():
+        home_town_items.append('{} = {}'.format(key, value))
+    return home_town_items
 
 
 # Call the function and print the result
@@ -109,7 +113,8 @@ print('Exercise 5:', list_home_town_items())
 # For example: ["Tina is awesome!", "Fred is awesome!", "Wilma is awesome!"]
 
 def create_awesome_students():
-    return 1
+    awesome_students = [f'{s} is awesome' for s in students]
+    return awesome_students
 
 
 # Call the function and print the result
@@ -122,6 +127,7 @@ print('Exercise 6:', create_awesome_students())
 # For example, if foods is a tuple of ('Taco', 'Burrito', 'Sandwich'), foods_with_an_a would be a list equal to ['Taco', 'Sandwich']
 
 def filter_foods_with_a():
+    foods_with_an_a = []
     return 1
 
 
